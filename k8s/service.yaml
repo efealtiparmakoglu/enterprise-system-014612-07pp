@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-014612-07pp-service
+spec:
+  selector:
+    app: enterprise-system-014612-07pp
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
